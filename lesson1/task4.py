@@ -1,13 +1,12 @@
-n = input("Введите число: ")
-if int(n) < 10:
+#n = input("Введите число: ")
+n = 3739
+if n < 10:
     print(n)
 else:
     i = 0
-    while i < len(n):
-        if int(n[i]) > int(n[i+1]):
-            max = n[i]
-            i += 1
-        else:
-            max = n[i+1]
-            i += 1
-    print(max)
+    while n > 0:
+        b = n % 10
+        if i < b:
+            i = b
+        n /= 10
+print(i)
