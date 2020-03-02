@@ -13,10 +13,6 @@ lst_val3 = []
 for key3, val3 in item3[1].items():
     lst_val3.append(val3)
 
-a = [1, 2, 3, 4, 5]
-b = ['a', 'b', 'c', 'd', 'e']
-zipped_lst = zip(a, b)
-# <zip object at 0x108b98080> - я сломал все голову и прогуглил весь инет, но не смог найти почему не работает zip!
-# предполагалось на данном этаве зипом собрать 3 списка значений из получившихся списков значение ))))
-# и после этого собрать все в итог задачи. Но я просто не смог решить вопрос с ЗИП...
-print(zipped_lst)
+vals1, vals2, vals3, vals4 = zip(lst_val1, lst_val2, lst_val3)
+
+print(f'{lst_keys[0]}: {vals1}, \n{lst_keys[1]}: {vals2}, \n{lst_keys[2]}: {vals3},  \n{lst_keys[3]}: {set(vals4)}')
