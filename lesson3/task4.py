@@ -6,9 +6,9 @@ def print_negot_power(number, power):
     elif power == -1:
         print(num)
     else:
-        while power <= -2:
+        while power < -1:
             num *= num
             power += 1
         print(num)
 
-print_negot_power(2, -2)
+print_negot_power(5, -2)
